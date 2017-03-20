@@ -33,10 +33,6 @@ class ViewController: UIViewController {
         PrinterSettings.shared.register(key: PrinterOptions.global, format: "dd :) MM :) yyyy")
         
         
-        print(attrLabel.attributedText)
-        attrLabel.text = "ASD\nASD\nASD"
-        print(attrLabel.attributedText)
-        
         let now = Date()
         print (now.printer.string(PrinterOptions.time))
     }

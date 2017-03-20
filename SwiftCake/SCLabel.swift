@@ -96,7 +96,7 @@ open class SCAttrLabel: SCLabel {
             let attributeString = NSMutableAttributedString(attributedString: attributedText)
             
             // Add line spacing
-            if self.paragraphLineSpacing > 0{
+            if self.paragraphLineSpacing > 0 {
                 let style = NSMutableParagraphStyle()
                 style.lineSpacing = paragraphLineSpacing
                 style.alignment = self.textAlignment

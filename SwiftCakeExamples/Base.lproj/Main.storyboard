@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n5z-Ln-lAo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKW-VQ-cGI" customClass="SCImageView" customModule="SwiftCake">
-                                <rect key="frame" x="67" y="62" width="240" height="128"/>
+                                <rect key="frame" x="67" y="106" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="IoJ-fZ-1UW"/>
@@ -40,7 +41,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="200" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUT-gg-1un" customClass="SCCheckbox" customModule="SwiftCake">
-                                <rect key="frame" x="129.5" y="262" width="116" height="32"/>
+                                <rect key="frame" x="129.5" y="306" width="116" height="32"/>
                                 <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -50,7 +51,7 @@
                                 <state key="highlighted" image="check"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TextField with left insets" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-Nc-XS9" customClass="SCTextField" customModule="SwiftCake">
-                                <rect key="frame" x="67" y="208" width="240" height="30"/>
+                                <rect key="frame" x="67" y="252" width="240" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="i77-9y-DRM"/>
@@ -64,18 +65,48 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEn-JS-GeZ" customClass="SCAttrLabel" customModule="SwiftCake">
-                                <rect key="frame" x="165.5" y="323" width="45" height="36.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="ASDASD ASDASD">
-                                        <attributes>
-                                            <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASDASD ASDASD a" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEn-JS-GeZ" customClass="SCAttrLabel" customModule="SwiftCake">
+                                <rect key="frame" x="146" y="367" width="83.5" height="62"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paragraphLineSpacing">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bt-4B-JM7">
+                                <rect key="frame" x="164" y="464" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="7z5-np-kPE" kind="show" id="jwW-YZ-pBQ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hIC-Lz-Wub" customClass="SCTextViewWithPlaceholder" customModule="SwiftCake">
+                                <rect key="frame" x="67" y="502" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="iOt-6R-qVG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Komu mam wierzyć"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineFragmentPadding">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -83,14 +114,20 @@
                             <constraint firstItem="EUT-gg-1un" firstAttribute="top" secondItem="oKW-VQ-cGI" secondAttribute="bottom" constant="72" id="2Ku-5K-tj8"/>
                             <constraint firstItem="EUT-gg-1un" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4I5-wf-Tu6"/>
                             <constraint firstItem="JjQ-Nc-XS9" firstAttribute="leading" secondItem="oKW-VQ-cGI" secondAttribute="leading" id="EOW-er-hb4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hIC-Lz-Wub" secondAttribute="trailing" constant="52" id="Oa2-el-zM9"/>
                             <constraint firstItem="oEn-JS-GeZ" firstAttribute="top" secondItem="EUT-gg-1un" secondAttribute="bottom" constant="29" id="V4U-ok-kv9"/>
                             <constraint firstItem="oEn-JS-GeZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XNl-di-m4d"/>
+                            <constraint firstItem="9bt-4B-JM7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cRy-5a-uzH"/>
                             <constraint firstItem="JjQ-Nc-XS9" firstAttribute="top" secondItem="oKW-VQ-cGI" secondAttribute="bottom" constant="18" id="dM9-Tn-xPZ"/>
                             <constraint firstItem="JjQ-Nc-XS9" firstAttribute="trailing" secondItem="oKW-VQ-cGI" secondAttribute="trailing" id="dtk-KQ-02G"/>
+                            <constraint firstItem="hIC-Lz-Wub" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="dwv-B4-3MP"/>
                             <constraint firstItem="oKW-VQ-cGI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="fVL-Xk-0Ug"/>
+                            <constraint firstItem="hIC-Lz-Wub" firstAttribute="top" secondItem="9bt-4B-JM7" secondAttribute="bottom" constant="8" id="gXc-Em-Jx1"/>
                             <constraint firstAttribute="trailing" secondItem="oKW-VQ-cGI" secondAttribute="trailing" constant="68" id="i6N-Yy-q63"/>
+                            <constraint firstItem="9bt-4B-JM7" firstAttribute="top" secondItem="oEn-JS-GeZ" secondAttribute="bottom" constant="35" id="l9k-i8-YDO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Qdl-Y3-DJt"/>
                     <connections>
                         <outlet property="attrLabel" destination="oEn-JS-GeZ" id="41g-d3-lEd"/>
                     </connections>
@@ -98,6 +135,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B1V-zz-VsN">
+            <objects>
+                <navigationController id="n5z-Ln-lAo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="irl-Ou-tsN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MK2-e0-fbB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWa-Be-6QG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="36"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Fry-ZS-ChJ">
+            <objects>
+                <viewController id="7z5-np-kPE" customClass="TableViewController" customModule="SwiftCakeExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Fz-x3-wcK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mcc-k3-ugy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fxi-f4-WSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VkG-ja-51B" customClass="SCStateTableView" customModule="SwiftCake">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="initialMessage" value="Test initial message"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="noItemsMessage" value="Test no items message"/>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VkG-ja-51B" secondAttribute="trailing" id="4Hk-N1-Qfi"/>
+                            <constraint firstItem="VkG-ja-51B" firstAttribute="leading" secondItem="Fxi-f4-WSQ" secondAttribute="leading" id="8Pw-DK-oLr"/>
+                            <constraint firstItem="Mcc-k3-ugy" firstAttribute="top" secondItem="VkG-ja-51B" secondAttribute="bottom" id="Aql-Zv-Ywg"/>
+                            <constraint firstItem="VkG-ja-51B" firstAttribute="top" secondItem="Fxi-f4-WSQ" secondAttribute="top" id="e2J-rn-Hlf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="VkG-ja-51B" id="SIT-ws-qTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekf-rH-7VN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>
