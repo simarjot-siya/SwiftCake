@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftCakeExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKW-VQ-cGI" customClass="SCImageView" customModule="SwiftCake">
+                                <rect key="frame" x="67" y="62" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="IoJ-fZ-1UW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="200" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUT-gg-1un" customClass="SCCheckbox" customModule="SwiftCake">
+                                <rect key="frame" x="129.5" y="262" width="116" height="32"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button" image="check_s"/>
+                                <state key="selected" image="check"/>
+                                <state key="highlighted" image="check"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TextField with left insets" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-Nc-XS9" customClass="SCTextField" customModule="SwiftCake">
+                                <rect key="frame" x="67" y="208" width="240" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i77-9y-DRM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="insets">
+                                        <rect key="value" x="0.0" y="10" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEn-JS-GeZ" customClass="SCAttrLabel" customModule="SwiftCake">
+                                <rect key="frame" x="165.5" y="323" width="45" height="36.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ASDASD ASDASD">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oKW-VQ-cGI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="1j4-Kq-HLj"/>
+                            <constraint firstItem="EUT-gg-1un" firstAttribute="top" secondItem="oKW-VQ-cGI" secondAttribute="bottom" constant="72" id="2Ku-5K-tj8"/>
+                            <constraint firstItem="EUT-gg-1un" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4I5-wf-Tu6"/>
+                            <constraint firstItem="JjQ-Nc-XS9" firstAttribute="leading" secondItem="oKW-VQ-cGI" secondAttribute="leading" id="EOW-er-hb4"/>
+                            <constraint firstItem="oEn-JS-GeZ" firstAttribute="top" secondItem="EUT-gg-1un" secondAttribute="bottom" constant="29" id="V4U-ok-kv9"/>
+                            <constraint firstItem="oEn-JS-GeZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XNl-di-m4d"/>
+                            <constraint firstItem="JjQ-Nc-XS9" firstAttribute="top" secondItem="oKW-VQ-cGI" secondAttribute="bottom" constant="18" id="dM9-Tn-xPZ"/>
+                            <constraint firstItem="JjQ-Nc-XS9" firstAttribute="trailing" secondItem="oKW-VQ-cGI" secondAttribute="trailing" id="dtk-KQ-02G"/>
+                            <constraint firstItem="oKW-VQ-cGI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="fVL-Xk-0Ug"/>
+                            <constraint firstAttribute="trailing" secondItem="oKW-VQ-cGI" secondAttribute="trailing" constant="68" id="i6N-Yy-q63"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attrLabel" destination="oEn-JS-GeZ" id="41g-d3-lEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check" width="32" height="32"/>
+        <image name="check_s" width="32" height="32"/>
+    </resources>
+</document>

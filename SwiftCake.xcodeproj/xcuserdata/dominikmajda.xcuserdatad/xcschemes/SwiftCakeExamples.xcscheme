@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F9291A261E5F016300C068C1"
-               BuildableName = "SwiftCake.framework"
-               BlueprintName = "SwiftCake"
+               BlueprintIdentifier = "F9291A351E5F017D00C068C1"
+               BuildableName = "SwiftCakeExamples.app"
+               BlueprintName = "SwiftCakeExamples"
                ReferencedContainer = "container:SwiftCake.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F9291A351E5F017D00C068C1"
+            BuildableName = "SwiftCakeExamples.app"
+            BlueprintName = "SwiftCakeExamples"
+            ReferencedContainer = "container:SwiftCake.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9291A261E5F016300C068C1"
-            BuildableName = "SwiftCake.framework"
-            BlueprintName = "SwiftCake"
+            BlueprintIdentifier = "F9291A351E5F017D00C068C1"
+            BuildableName = "SwiftCakeExamples.app"
+            BlueprintName = "SwiftCakeExamples"
             ReferencedContainer = "container:SwiftCake.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9291A261E5F016300C068C1"
-            BuildableName = "SwiftCake.framework"
-            BlueprintName = "SwiftCake"
+            BlueprintIdentifier = "F9291A351E5F017D00C068C1"
+            BuildableName = "SwiftCakeExamples.app"
+            BlueprintName = "SwiftCakeExamples"
             ReferencedContainer = "container:SwiftCake.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

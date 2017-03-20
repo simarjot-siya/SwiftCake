@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCImageView.swift"
+            timestampString = "509546466.690927"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SCImageView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.init (image : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; SwiftCake.SCImageView"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.19799"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.__allocating_init (image : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; SwiftCake.SCImageView"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.201295"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.init (image : Swift.Optional&lt;__ObjC.UIImage&gt;, highlightedImage : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; SwiftCake.SCImageView"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.204711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.__allocating_init (image : Swift.Optional&lt;__ObjC.UIImage&gt;, highlightedImage : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; SwiftCake.SCImageView"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.208101"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.init (frame : __C.CGRect) -&gt; SwiftCake.SCImageView"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.211411"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.__allocating_init (frame : __C.CGRect) -&gt; SwiftCake.SCImageView"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.214518"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SwiftCake.SCImageView&gt;"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.21775"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCImageView.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SwiftCake.SCImageView&gt;"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCImageView.swift"
+                  timestampString = "509545547.221141"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SKButton.swift"
+            timestampString = "509548719.246288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "addSelectTarget()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/Printer.swift"
+            timestampString = "510062322.792266"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "string(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/Printer.swift"
+            timestampString = "510062323.543995"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "string(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/Printer.swift"
+            timestampString = "510062324.094072"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "string(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCLabel.swift"
+            timestampString = "511048444.030879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "SCAttrLabel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCLabel.swift"
+            timestampString = "511048444.030879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "SCAttrLabel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCLabel.swift"
+            timestampString = "511048444.030879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "SCAttrLabel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCakeExamples/ViewController.swift"
+            timestampString = "510824863.383323"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCLabel.swift"
+            timestampString = "511048444.030879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "SCAttrLabel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCLabel.swift"
+            timestampString = "511048444.030879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "SCAttrLabel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCLabel.swift"
+            timestampString = "511048444.030879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "SCAttrLabel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCake/SCLabel.swift"
+            timestampString = "510826935.535406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "SCLabel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCAttrLabel.__deallocating_deinit"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCLabel.swift"
+                  timestampString = "510826936.059445"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCAttrLabel.init (frame : __C.CGRect) -&gt; SwiftCake.SCAttrLabel"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCLabel.swift"
+                  timestampString = "510826936.062421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCAttrLabel.__allocating_init (frame : __C.CGRect) -&gt; SwiftCake.SCAttrLabel"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCLabel.swift"
+                  timestampString = "510826936.065607"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCAttrLabel.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SwiftCake.SCAttrLabel&gt;"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCLabel.swift"
+                  timestampString = "510826936.069628"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCake.SCAttrLabel.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SwiftCake.SCAttrLabel&gt;"
+                  moduleName = "SwiftCake"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominikmajda/Projekty/SwiftCake/SwiftCake/SCLabel.swift"
+                  timestampString = "510826936.073382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
