@@ -17,6 +17,30 @@ public class SCNavigationBar: UINavigationBar {
         }
     }
     
+    @IBInspectable var transparentBar: Bool = false {
+        didSet {
+            if transparentBar {
+                makeTransparentBar()
+            } else {
+                restoreNormalBar()
+            }
+        }
+    }
+    
+    fileprivate func restoreNormalBar() {
+        self.setBackgroundImage(
+            UINavigationBar.appearance().backgroundImage(for: .default),
+            for: .default)
+        self.isTranslucent = UINavigationBar.appearance().isTranslucent
+        self.shadowImage = UINavigationBar.appearance().shadowImage
+    }
+    
+    fileprivate func makeTransparentBar() {
+        self.setBackgroundImage(UIImage(), for: .default)
+        self.shadowImage = UIImage()
+        self.isTranslucent = true
+    }
+    
     fileprivate func createBottomBorder(color: UIColor) {
 
         let bottomBorderView = UIView(frame: CGRect.zero)
