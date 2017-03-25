@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F9120FAD1E871F0600073ABC /* SCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9120FAC1E871F0600073ABC /* SCView.swift */; };
+		F9120FBB1E87397700073ABC /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9120FBA1E87397700073ABC /* UIImageExtensions.swift */; };
 		F9291A2C1E5F016300C068C1 /* SwiftCake.h in Headers */ = {isa = PBXBuildFile; fileRef = F9291A2A1E5F016300C068C1 /* SwiftCake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9291A391E5F017D00C068C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9291A381E5F017D00C068C1 /* AppDelegate.swift */; };
 		F9291A3B1E5F017D00C068C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9291A3A1E5F017D00C068C1 /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		F9120FAC1E871F0600073ABC /* SCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCView.swift; sourceTree = "<group>"; };
+		F9120FBA1E87397700073ABC /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		F9291A271E5F016300C068C1 /* SwiftCake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9291A2A1E5F016300C068C1 /* SwiftCake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCake.h; sourceTree = "<group>"; };
 		F9291A2B1E5F016300C068C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9120FB91E87396900073ABC /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F9120FBA1E87397700073ABC /* UIImageExtensions.swift */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		F9291A1D1E5F016300C068C1 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +230,7 @@
 		F9D8B9481E66D4DB006AC8EA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F9120FB91E87396900073ABC /* Image */,
 				F9D780F21E79967000BB78BD /* Array */,
 				F9C9497F1E75FC5100BD24EF /* Bundle */,
 				F9B236161E719C7200E481F6 /* Strings */,
@@ -382,6 +393,7 @@
 				F98266C01E7FC8A100F89A7D /* SCTableView.swift in Sources */,
 				F9B3B58C1E6F004C00F27E17 /* SCTextField.swift in Sources */,
 				F9D8B94E1E66ED9B006AC8EA /* PrinterSettings.swift in Sources */,
+				F9120FBB1E87397700073ABC /* UIImageExtensions.swift in Sources */,
 				F9C9497C1E75D6F600BD24EF /* SCReuseCell.swift in Sources */,
 				F9575C141E6F5F6100B08837 /* SCNavigationBar.swift in Sources */,
 				F9291A521E5F0FC800C068C1 /* SCRoundBorderProtocols.swift in Sources */,
