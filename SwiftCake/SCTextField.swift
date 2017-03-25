@@ -37,6 +37,14 @@ open class SCTextField: UITextField, SCRoundedBorderedView {
         }
     }
     
+    @IBInspectable open var placeholderColor: UIColor {
+        get {
+            return self.value(forKeyPath: "_placeholderLabel.textColor") as? UIColor ?? .clear
+        }
+        set {
+            self.setValue(newValue, forKeyPath: "_placeholderLabel.textColor")
+        }
+    }
     
     open override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
         return textRect(forBounds: bounds)
