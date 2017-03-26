@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 open class SCTextView: UITextView, SCRoundedBorderedView {
-   
+    
     @IBInspectable public var cornerRadius: CGFloat = 0.0 {
         didSet {
             updateCornerRadius(with: cornerRadius)
@@ -46,7 +46,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
     
     // Placeholder properties
     // Need to set both placeHolder and placeholderColor in order to show placeholder in the textview
-    @IBInspectable open var placeholder: NSString? {
+    @IBInspectable open var placeholder: String? {
         didSet { setNeedsDisplay() }
     }
     @IBInspectable open var placeholderColor: UIColor = UIColor(r: 199, g: 199, b: 205) {
@@ -70,7 +70,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
             setNeedsDisplay()
         }
     }
-        
+    
     @IBInspectable open var lineFragmentPadding: CGFloat = 5.0 {
         didSet {
             textContainer.lineFragmentPadding = lineFragmentPadding
@@ -112,7 +112,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
             var attributes: [String: Any] = [
                 NSForegroundColorAttributeName: placeholderColor,
                 NSParagraphStyleAttributeName: paragraphStyle,
-            ]
+                ]
             if let font = font {
                 attributes[NSFontAttributeName] = font
             }
@@ -162,6 +162,11 @@ open class SCTextViewWithPlaceholder: SCTextView {
     }
 }
 
+@objc
+public protocol SCGrowingTextViewDelegate: UITextViewDelegate {
+    @objc optional func textViewDidGrow(_ textView: UITextView)
+}
+
 @IBDesignable
 open class SCGrowingTextView: SCTextViewWithPlaceholder {
     
@@ -178,10 +183,6 @@ open class SCGrowingTextView: SCTextViewWithPlaceholder {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
-    }
-    
-    open override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIViewNoIntrinsicMetric, height: 30)
     }
     
     func associateConstraints() {
@@ -224,9 +225,10 @@ open class SCGrowingTextView: SCTextViewWithPlaceholder {
         
         if height != heightConstraint?.constant {
             self.heightConstraint!.constant = height;
+            if let delegate = self.delegate as? SCGrowingTextViewDelegate {
+                delegate.textViewDidGrow?(self)
+            }
             scrollRangeToVisible(NSMakeRange(0, 0))
         }
     }
-    
-    
 }
