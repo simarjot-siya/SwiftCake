@@ -34,6 +34,7 @@
 		F9D8B94A1E66D4E7006AC8EA /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8B9491E66D4E7006AC8EA /* Printer.swift */; };
 		F9D8B94E1E66ED9B006AC8EA /* PrinterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8B94D1E66ED9B006AC8EA /* PrinterSettings.swift */; };
 		F9D8B9511E66F0D8006AC8EA /* Comparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8B9501E66F0D8006AC8EA /* Comparator.swift */; };
+		F9EEF5811E8744CF00F6ABC5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EEF5801E8744CF00F6ABC5 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		F9D8B9491E66D4E7006AC8EA /* Printer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 		F9D8B94D1E66ED9B006AC8EA /* PrinterSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrinterSettings.swift; sourceTree = "<group>"; };
 		F9D8B9501E66F0D8006AC8EA /* Comparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparator.swift; sourceTree = "<group>"; };
+		F9EEF5801E8744CF00F6ABC5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +113,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F9120FB91E87396900073ABC /* Image */ = {
+		F9120FB91E87396900073ABC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				F9120FBA1E87397700073ABC /* UIImageExtensions.swift */,
+				F9EEF5801E8744CF00F6ABC5 /* UIViewExtension.swift */,
 			);
-			name = Image;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		F9291A1D1E5F016300C068C1 = {
@@ -230,7 +233,7 @@
 		F9D8B9481E66D4DB006AC8EA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F9120FB91E87396900073ABC /* Image */,
+				F9120FB91E87396900073ABC /* Views */,
 				F9D780F21E79967000BB78BD /* Array */,
 				F9C9497F1E75FC5100BD24EF /* Bundle */,
 				F9B236161E719C7200E481F6 /* Strings */,
@@ -397,6 +400,7 @@
 				F9C9497C1E75D6F600BD24EF /* SCReuseCell.swift in Sources */,
 				F9575C141E6F5F6100B08837 /* SCNavigationBar.swift in Sources */,
 				F9291A521E5F0FC800C068C1 /* SCRoundBorderProtocols.swift in Sources */,
+				F9EEF5811E8744CF00F6ABC5 /* UIViewExtension.swift in Sources */,
 				F9291A541E5F111400C068C1 /* SCButton.swift in Sources */,
 				F9B236131E7198A300E481F6 /* SCLabel.swift in Sources */,
 				F9291A4A1E5F027900C068C1 /* SCImageView.swift in Sources */,
