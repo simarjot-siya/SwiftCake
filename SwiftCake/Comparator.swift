@@ -12,7 +12,6 @@ public final class Comparator {
     
     public let date: Date
     
-    
     public init(_ date: Date) {
         self.date = date
     }

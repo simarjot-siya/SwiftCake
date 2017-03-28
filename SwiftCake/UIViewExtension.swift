@@ -10,6 +10,10 @@ import UIKit
 
 extension UIView {
     
+    
+    /// Returns view class with nib loaded from file with the same name
+    ///
+    /// - Returns: class with all outlets and view set
     public class func fromNib<T : UIView>() -> T {
         return Bundle.main.loadNibNamed(String(describing: T.self),
                                         owner: nil,

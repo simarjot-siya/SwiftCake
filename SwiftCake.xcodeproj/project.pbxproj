@@ -168,8 +168,8 @@
 		F9291A481E5F018700C068C1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F98266BE1E7FC88D00F89A7D /* TableView */,
 				F9291A501E5F0FB400C068C1 /* Protocols */,
+				F98266BE1E7FC88D00F89A7D /* TableView */,
 				F9291A491E5F027900C068C1 /* SCImageView.swift */,
 				F9291A531E5F111400C068C1 /* SCButton.swift */,
 				F9B3B58B1E6F004C00F27E17 /* SCTextField.swift */,
