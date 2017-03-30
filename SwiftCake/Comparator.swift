@@ -20,10 +20,14 @@ public final class Comparator {
 
 extension Comparator {
     
+    public func compareToNow(unit: Calendar.Component) -> Int {
+        return compare(to: Date(), unit: unit)
+    }
+    
     public func compare(to date: Date, unit: Calendar.Component) -> Int {
         let calendar = Calendar.current
-        // TODO
-        return -1
+        let components = calendar.dateComponents([unit, ], from: self.date, to: date)
+        return components.value(for: unit)!
     }
 }
 

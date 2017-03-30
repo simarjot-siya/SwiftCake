@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftCake"
-  s.version      = "0.1.6"
+  s.version      = "0.1.7"
   s.summary      = "Complex library of various views, components and utils I use across apps"
 
   s.homepage     = "https://github.com/Rovalx/SwiftCake"
