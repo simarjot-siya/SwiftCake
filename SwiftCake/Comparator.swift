@@ -39,7 +39,7 @@ extension Date {
     
     public func resetToMidnight() -> Date {
         let calendar = Calendar.current
-        calendar.startOfDay(for: self)
+        return calendar.startOfDay(for: self)
     }
     
 }
