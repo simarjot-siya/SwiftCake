@@ -37,4 +37,9 @@ extension Date {
         return Comparator(self)
     }
     
+    public func resetToMidnight() -> Date {
+        let calendar = Calendar.current
+        calendar.startOfDay(for: self)
+    }
+    
 }
