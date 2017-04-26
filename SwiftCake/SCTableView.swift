@@ -112,6 +112,7 @@ public class SCStateTableView: UITableView {
         // Configure info label
         self.infoLabel.isHidden = true
         self.infoLabel.textAlignment = .center
+        self.infoLabel.numberOfLines = 0
         self.infoLabel.font = SCStateTableViewSettings.infoLabelFont
         self.infoLabel.translatesAutoresizingMaskIntoConstraints = false
         self.infoLabel.textColor = UIColor.lightGray

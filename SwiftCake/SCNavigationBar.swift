@@ -11,13 +11,13 @@ import UIKit
 @IBDesignable
 public class SCNavigationBar: UINavigationBar {
     
-    @IBInspectable var borderColor: UIColor = UIColor.clear {
+    @IBInspectable public var borderColor: UIColor = UIColor.clear {
         didSet {
             createBottomBorder(color: borderColor)
         }
     }
     
-    @IBInspectable var transparentBar: Bool = false {
+    @IBInspectable public var transparentBar: Bool = false {
         didSet {
             if transparentBar {
                 makeTransparentBar()

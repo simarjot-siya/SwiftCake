@@ -106,7 +106,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
             
             let rect = CGRect(x: textContainerInset.left + placeholderLeftMargin,
                               y: textContainerInset.top,
-                              width:   frame.size.width - textContainerInset.left - textContainerInset.right,
+                              width:   frame.size.width - textContainerInset.left - textContainerInset.right - (2 * placeholderLeftMargin),
                               height: frame.size.height)
             
             var attributes: [String: Any] = [

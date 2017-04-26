@@ -45,6 +45,18 @@ public class SCButton: UIButton, SCRoundedBorderedView {
         }
     }
     
+    @IBInspectable public var borderColorSelected: UIColor = UIColor.clear
+    
+    public override var isSelected: Bool {
+        didSet {
+            if isSelected {
+                updateBorderColor(with: borderColorSelected)
+            } else {
+                updateBorderColor(with: borderColor)
+            }
+        }
+    }
+    
 }
 
 public class SCCheckbox: SCButton {
@@ -64,6 +76,7 @@ public class SCCheckbox: SCButton {
     }
     
     func reverse() {
+        self.sendActions(for: .valueChanged)
         self.isSelected = !self.isSelected
     }
 }
