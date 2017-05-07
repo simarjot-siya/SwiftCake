@@ -20,6 +20,7 @@
 		F9291A4C1E5F05B000C068C1 /* SwiftCake.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9291A271E5F016300C068C1 /* SwiftCake.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F9291A521E5F0FC800C068C1 /* SCRoundBorderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9291A511E5F0FC800C068C1 /* SCRoundBorderProtocols.swift */; };
 		F9291A541E5F111400C068C1 /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9291A531E5F111400C068C1 /* SCButton.swift */; };
+		F9538DF91EBF2CC400988748 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9538DF81EBF2CC400988748 /* DictionaryExtensions.swift */; };
 		F9575C141E6F5F6100B08837 /* SCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575C131E6F5F6100B08837 /* SCNavigationBar.swift */; };
 		F9575C161E6F673300B08837 /* SCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575C151E6F673300B08837 /* SCTextView.swift */; };
 		F9575C191E6F677C00B08837 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575C181E6F677C00B08837 /* UIColorExtensions.swift */; };
@@ -77,6 +78,7 @@
 		F9291A491E5F027900C068C1 /* SCImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCImageView.swift; sourceTree = "<group>"; };
 		F9291A511E5F0FC800C068C1 /* SCRoundBorderProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRoundBorderProtocols.swift; sourceTree = "<group>"; };
 		F9291A531E5F111400C068C1 /* SCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
+		F9538DF81EBF2CC400988748 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		F9575C131E6F5F6100B08837 /* SCNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNavigationBar.swift; sourceTree = "<group>"; };
 		F9575C151E6F673300B08837 /* SCTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCTextView.swift; sourceTree = "<group>"; };
 		F9575C181E6F677C00B08837 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -189,6 +191,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		F9538DF71EBF2CB700988748 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F9538DF81EBF2CC400988748 /* DictionaryExtensions.swift */,
+			);
+			name = Dictionary;
+			sourceTree = "<group>";
+		};
 		F9575C171E6F676F00B08837 /* Color */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +243,7 @@
 		F9D8B9481E66D4DB006AC8EA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F9538DF71EBF2CB700988748 /* Dictionary */,
 				F9120FB91E87396900073ABC /* Views */,
 				F9D780F21E79967000BB78BD /* Array */,
 				F9C9497F1E75FC5100BD24EF /* Bundle */,
@@ -402,6 +413,7 @@
 				F9291A521E5F0FC800C068C1 /* SCRoundBorderProtocols.swift in Sources */,
 				F9EEF5811E8744CF00F6ABC5 /* UIViewExtension.swift in Sources */,
 				F9291A541E5F111400C068C1 /* SCButton.swift in Sources */,
+				F9538DF91EBF2CC400988748 /* DictionaryExtensions.swift in Sources */,
 				F9B236131E7198A300E481F6 /* SCLabel.swift in Sources */,
 				F9291A4A1E5F027900C068C1 /* SCImageView.swift in Sources */,
 				F9D8B9511E66F0D8006AC8EA /* Comparator.swift in Sources */,

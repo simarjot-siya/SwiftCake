@@ -135,6 +135,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
             if notificationObject === self {
                 if trimWhiteSpaceWhenEndEditing {
                     text = text?.trimmingCharacters(in: .whitespacesAndNewlines)
+                    delegate?.textViewDidEndEditing?(self)
                     setNeedsDisplay()
                 }
             }
