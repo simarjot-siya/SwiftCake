@@ -20,7 +20,7 @@ extension SCReusableCell where Self: UITableViewCell {
 
 extension SCReusableCell where Self: UICollectionViewCell {
     public static var cellIdentifier: String {
-        return String(describing: type(of: self))
+        return String(describing: type(of: self)).replacingOccurrences(of: ".Type", with: "")
     }
 }
 

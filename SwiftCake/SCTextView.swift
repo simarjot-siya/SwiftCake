@@ -106,7 +106,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
             
             let rect = CGRect(x: textContainerInset.left + placeholderLeftMargin,
                               y: textContainerInset.top,
-                              width:   frame.size.width - textContainerInset.left - textContainerInset.right - (2 * placeholderLeftMargin),
+                              width:   frame.size.width - textContainerInset.left - textContainerInset.right,
                               height: frame.size.height)
             
             var attributes: [String: Any] = [
@@ -210,7 +210,14 @@ open class SCGrowingTextView: SCTextViewWithPlaceholder {
         let size = sizeThatFits(CGSize(width:bounds.size.width, height: CGFloat.greatestFiniteMagnitude))
         var height = size.height
         if maxHeight > 0 {
+            if height > maxHeight {
+                isScrollEnabled = true
+            } else {
+                isScrollEnabled = false
+            }
             height = min(size.height, maxHeight)
+        } else {
+            isScrollEnabled = false
         }
         
         if (heightConstraint == nil) {

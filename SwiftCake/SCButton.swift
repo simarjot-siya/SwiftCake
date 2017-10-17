@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class SCButton: UIButton, SCRoundedBorderedView {
+open class SCButton: UIButton, SCRoundedBorderedView {
     
     @IBInspectable public var reversed: Bool = false {
         didSet {
