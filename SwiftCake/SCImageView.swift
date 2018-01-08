@@ -11,25 +11,25 @@ import UIKit
 @IBDesignable
 open class SCImageView: UIImageView, SCRoundedBorderedView {
     
-    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {
             updateCornerRadius(with: cornerRadius)
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0.0 {
+    @IBInspectable open var borderWidth: CGFloat = 0.0 {
         didSet {
             updateBorderWidth(with: borderWidth)
         }
     }
     
-    @IBInspectable public var masksToBounds: Bool = false {
+    @IBInspectable open var masksToBounds: Bool = false {
         didSet {
             updateMasksToBounds(with: masksToBounds)
         }
     }
 
-    @IBInspectable public var borderColor: UIColor = UIColor.clear {
+    @IBInspectable open var borderColor: UIColor = UIColor.clear {
         didSet {
             updateBorderColor(with: borderColor)
         }

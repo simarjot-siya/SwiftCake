@@ -212,13 +212,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCake/SCLabel.swift"
-            timestampString = "511048444.030879"
+            timestampString = "537092629.371138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
             endingLineNumber = "100"
-            landmarkName = "SCAttrLabel"
-            landmarkType = "3">
+            landmarkName = "attributedText"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -228,13 +228,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCake/SCLabel.swift"
-            timestampString = "511048444.030879"
+            timestampString = "537092629.3712929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "SCAttrLabel"
-            landmarkType = "3">
+            landmarkName = "text"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -244,13 +244,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCake/SCLabel.swift"
-            timestampString = "511048444.030879"
+            timestampString = "537092629.371343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
-            landmarkName = "SCAttrLabel"
-            landmarkType = "3">
+            landmarkName = "attributedText"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -276,13 +276,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCake/SCLabel.swift"
-            timestampString = "511048444.030879"
+            timestampString = "537092629.37142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
-            landmarkName = "SCAttrLabel"
-            landmarkType = "3">
+            landmarkName = "text"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -292,13 +292,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCake/SCLabel.swift"
-            timestampString = "511048444.030879"
+            timestampString = "537092629.371467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "SCAttrLabel"
-            landmarkType = "3">
+            landmarkName = "text"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -308,13 +308,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCake/SCLabel.swift"
-            timestampString = "511048444.030879"
+            timestampString = "537092629.371509"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "120"
             endingLineNumber = "120"
-            landmarkName = "SCAttrLabel"
-            landmarkType = "3">
+            landmarkName = "attributedText"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -324,7 +324,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCake/SCLabel.swift"
-            timestampString = "510826935.535406"
+            timestampString = "537092629.371549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"

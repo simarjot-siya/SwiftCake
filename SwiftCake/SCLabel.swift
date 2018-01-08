@@ -11,25 +11,25 @@ import UIKit
 @IBDesignable
 open class SCLabel: UILabel, SCRoundedBorderedView {
     
-    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {
             updateCornerRadius(with: cornerRadius)
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0.0 {
+    @IBInspectable open var borderWidth: CGFloat = 0.0 {
         didSet {
             updateBorderWidth(with: borderWidth)
         }
     }
     
-    @IBInspectable public var masksToBounds: Bool = false {
+    @IBInspectable open var masksToBounds: Bool = false {
         didSet {
             updateMasksToBounds(with: masksToBounds)
         }
     }
     
-    @IBInspectable public var borderColor: UIColor = UIColor.clear {
+    @IBInspectable open var borderColor: UIColor = UIColor.clear {
         didSet {
             updateBorderColor(with: borderColor)
         }
@@ -42,7 +42,7 @@ open class SCLabel: UILabel, SCRoundedBorderedView {
 open class SCAttrLabel: SCLabel {
     
     fileprivate var defaultParagraphLineSpacing: CGFloat = 0
-    @IBInspectable var paragraphLineSpacing: CGFloat {
+    @IBInspectable open var paragraphLineSpacing: CGFloat {
         get {
             return defaultParagraphLineSpacing
         }
@@ -54,7 +54,7 @@ open class SCAttrLabel: SCLabel {
         }
     }
     fileprivate var defaultKerning: CGFloat = 0
-    @IBInspectable var kerning: CGFloat {
+    @IBInspectable open var kerning: CGFloat {
         get {
             return defaultKerning
         }

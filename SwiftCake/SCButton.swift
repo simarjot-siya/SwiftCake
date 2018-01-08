@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 open class SCButton: UIButton, SCRoundedBorderedView {
     
-    @IBInspectable public var reversed: Bool = false {
+    @IBInspectable open var reversed: Bool = false {
         didSet {
             if reversed {
                 transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
@@ -21,33 +21,33 @@ open class SCButton: UIButton, SCRoundedBorderedView {
         }
     }
 
-    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {
             updateCornerRadius(with: cornerRadius)
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0.0 {
+    @IBInspectable open var borderWidth: CGFloat = 0.0 {
         didSet {
             updateBorderWidth(with: borderWidth)
         }
     }
     
-    @IBInspectable public var masksToBounds: Bool = false {
+    @IBInspectable open var masksToBounds: Bool = false {
         didSet {
             updateMasksToBounds(with: masksToBounds)
         }
     }
     
-    @IBInspectable public var borderColor: UIColor = UIColor.clear {
+    @IBInspectable open var borderColor: UIColor = UIColor.clear {
         didSet {
             updateBorderColor(with: borderColor)
         }
     }
     
-    @IBInspectable public var borderColorSelected: UIColor = UIColor.clear
+    @IBInspectable open var borderColorSelected: UIColor = UIColor.clear
     
-    public override var isSelected: Bool {
+    open override var isSelected: Bool {
         didSet {
             if isSelected {
                 updateBorderColor(with: borderColorSelected)
@@ -59,7 +59,7 @@ open class SCButton: UIButton, SCRoundedBorderedView {
     
 }
 
-public class SCCheckbox: SCButton {
+open class SCCheckbox: SCButton {
     
     override public init(frame: CGRect) {
         super.init(frame: frame)

@@ -11,25 +11,25 @@ import UIKit
 @IBDesignable
 open class SCTextView: UITextView, SCRoundedBorderedView {
     
-    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {
             updateCornerRadius(with: cornerRadius)
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0.0 {
+    @IBInspectable open var borderWidth: CGFloat = 0.0 {
         didSet {
             updateBorderWidth(with: borderWidth)
         }
     }
     
-    @IBInspectable public var masksToBounds: Bool = false {
+    @IBInspectable open var masksToBounds: Bool = false {
         didSet {
             updateMasksToBounds(with: masksToBounds)
         }
     }
     
-    @IBInspectable public var borderColor: UIColor = UIColor.clear {
+    @IBInspectable open var borderColor: UIColor = UIColor.clear {
         didSet {
             updateBorderColor(with: borderColor)
         }
@@ -146,7 +146,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
     func textDidChange(notification: Notification) {
         if let notificationObject = notification.object as? SCTextViewWithPlaceholder {
             if notificationObject === self {
-                if maxCharactersCount > 0 && text.characters.count > maxCharactersCount {
+                if maxCharactersCount > 0 && text.count > maxCharactersCount {
                     
                     let endIndex = text.index(text.startIndex, offsetBy: maxCharactersCount)
                     text = text.substring(to: endIndex)

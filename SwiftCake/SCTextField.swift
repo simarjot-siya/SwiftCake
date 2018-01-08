@@ -11,27 +11,27 @@ import UIKit
 @IBDesignable
 open class SCTextField: UITextField, SCRoundedBorderedView {
     
-    @IBInspectable public var insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    @IBInspectable open var insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     
-    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {
             updateCornerRadius(with: cornerRadius)
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0.0 {
+    @IBInspectable open var borderWidth: CGFloat = 0.0 {
         didSet {
             updateBorderWidth(with: borderWidth)
         }
     }
     
-    @IBInspectable public var masksToBounds: Bool = false {
+    @IBInspectable open var masksToBounds: Bool = false {
         didSet {
             updateMasksToBounds(with: masksToBounds)
         }
     }
     
-    @IBInspectable public var borderColor: UIColor = UIColor.clear {
+    @IBInspectable open var borderColor: UIColor = UIColor.clear {
         didSet {
             updateBorderColor(with: borderColor)
         }
@@ -46,7 +46,7 @@ open class SCTextField: UITextField, SCRoundedBorderedView {
         }
     }
     
-    open override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
         return textRect(forBounds: bounds)
     }
     
