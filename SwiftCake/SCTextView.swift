@@ -109,14 +109,15 @@ open class SCTextViewWithPlaceholder: SCTextView {
                               width:   frame.size.width - textContainerInset.left - textContainerInset.right,
                               height: frame.size.height)
             
-            var attributes: [String: Any] = [
-                NSForegroundColorAttributeName: placeholderColor,
-                NSParagraphStyleAttributeName: paragraphStyle,
+            var attributes: [NSAttributedStringKey: Any] = [
+                NSAttributedStringKey.foregroundColor: placeholderColor,
+                NSAttributedStringKey.paragraphStyle: paragraphStyle,
                 ]
-            if let font = font {
-                attributes[NSFontAttributeName] = font
-            }
             
+            if let font = font {
+                attributes[NSAttributedStringKey.font] = font
+            }
+
             placeHolder.draw(in: rect, withAttributes: attributes)
         }
     }
@@ -130,7 +131,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
     
     
     // Trim white space and new line characters when end editing.
-    func textDidEndEditing(notification: Notification) {
+    @objc func textDidEndEditing(notification: Notification) {
         if let notificationObject = notification.object as? SCTextViewWithPlaceholder {
             if notificationObject === self {
                 if trimWhiteSpaceWhenEndEditing {
@@ -143,13 +144,13 @@ open class SCTextViewWithPlaceholder: SCTextView {
     }
     
     // Limit the length of text
-    func textDidChange(notification: Notification) {
+    @objc func textDidChange(notification: Notification) {
         if let notificationObject = notification.object as? SCTextViewWithPlaceholder {
             if notificationObject === self {
                 if maxCharactersCount > 0 && text.count > maxCharactersCount {
                     
                     let endIndex = text.index(text.startIndex, offsetBy: maxCharactersCount)
-                    text = text.substring(to: endIndex)
+                    text = String(text[..<endIndex])
                     undoManager?.removeAllActions()
                 }
                 setNeedsDisplay()

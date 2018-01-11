@@ -75,7 +75,7 @@ open class SCCheckbox: SCButton {
         self.addTarget(self, action: #selector(reverse), for: .touchUpInside)
     }
     
-    func reverse() {
+    @objc func reverse() {
         self.sendActions(for: .valueChanged)
         self.isSelected = !self.isSelected
     }

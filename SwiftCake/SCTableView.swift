@@ -10,7 +10,7 @@ import UIKit
 
 public class SCStateTableViewSettings {
     
-    static var infoLabelFont: UIFont = UIFont.systemFont(ofSize: 15.0, weight: UIFontWeightMedium)
+    static var infoLabelFont: UIFont = UIFont.systemFont(ofSize: 15.0, weight: UIFont.Weight.medium)
     static var activityIndicatorStyle: UIActivityIndicatorViewStyle = .gray
     
     
