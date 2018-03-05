@@ -136,7 +136,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
                 if trimWhiteSpaceWhenEndEditing {
                     text = text?.trimmingCharacters(in: .whitespacesAndNewlines)
                     delegate?.textViewDidEndEditing?(self)
-                    setNeedsDisplay()
+                    setNeedsLayout()
                 }
             }
         }
@@ -152,7 +152,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
                     text = text.substring(to: endIndex)
                     undoManager?.removeAllActions()
                 }
-                setNeedsDisplay()
+                setNeedsLayout()
             }
         }
     }

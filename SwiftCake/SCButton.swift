@@ -72,11 +72,11 @@ open class SCCheckbox: SCButton {
     }
     
     private func addSelectTarget() {
-        self.addTarget(self, action: #selector(reverse), for: .touchUpInside)
+        addTarget(self, action: #selector(reverse), for: .touchUpInside)
     }
     
     func reverse() {
-        self.sendActions(for: .valueChanged)
-        self.isSelected = !self.isSelected
+        isSelected = !isSelected
+        sendActions(for: .valueChanged)
     }
 }
