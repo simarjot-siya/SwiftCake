@@ -110,12 +110,12 @@ open class SCTextViewWithPlaceholder: SCTextView {
                               height: frame.size.height)
             
             var attributes: [NSAttributedStringKey: Any] = [
-                NSAttributedStringKey.foregroundColor: placeholderColor,
-                NSAttributedStringKey.paragraphStyle: paragraphStyle,
+                .foregroundColor: placeholderColor,
+                .paragraphStyle: paragraphStyle,
                 ]
             
             if let font = font {
-                attributes[NSAttributedStringKey.font] = font
+                attributes[.font] = font
             }
 
             placeHolder.draw(in: rect, withAttributes: attributes)
