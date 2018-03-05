@@ -100,14 +100,14 @@ open class SCAttrLabel: SCLabel {
                 let style = NSMutableParagraphStyle()
                 style.lineSpacing = paragraphLineSpacing
                 style.alignment = self.textAlignment
-                attributeString.addAttribute(NSParagraphStyleAttributeName,
+                attributeString.addAttribute(NSAttributedStringKey.paragraphStyle,
                                              value: style,
                                              range: NSMakeRange(0, attributedText.length))
             }
             
             // Add kerning
             if self.kerning > 0 {
-                attributeString.addAttribute(NSKernAttributeName,
+                attributeString.addAttribute(NSAttributedStringKey.kern,
                                              value: kerning,
                                              range: NSMakeRange(0, attributedText.length))
             }
