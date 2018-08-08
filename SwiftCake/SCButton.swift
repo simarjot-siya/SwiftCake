@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 open class SCButton: UIButton, SCRoundedBorderedView {
     
     @IBInspectable open var reversed: Bool = false {
@@ -39,14 +39,26 @@ open class SCButton: UIButton, SCRoundedBorderedView {
         }
     }
     
+    @IBInspectable open var backgroundColorSelected: UIColor = UIColor.clear
+    
+    /// In this value we save original background color so we can restore it
+    private var _orginalBackgroundColor: UIColor?
+    
     @IBInspectable open var borderColorSelected: UIColor = UIColor.clear
     
     open override var isSelected: Bool {
         didSet {
             if isSelected {
                 updateBorderColor(with: borderColorSelected)
+                
+                if _orginalBackgroundColor == nil {
+                    _orginalBackgroundColor = backgroundColor
+                }
+                
+                backgroundColor = backgroundColorSelected
             } else {
                 updateBorderColor(with: borderColor)
+                backgroundColor = _orginalBackgroundColor
             }
         }
     }
@@ -74,3 +86,4 @@ open class SCCheckbox: SCButton {
         sendActions(for: .valueChanged)
     }
 }
+
