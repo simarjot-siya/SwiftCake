@@ -45,7 +45,7 @@ open class SCTextField: UITextField, SCRoundedBorderedView {
     }
     
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, insets)
+        return bounds.inset(by: insets)
     }
     
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {

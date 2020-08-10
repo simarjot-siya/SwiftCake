@@ -60,7 +60,7 @@ extension UIImage {
         
         // Resize and decode image to be data
         guard let resizedImage = self.resizeImage(toMaxDimension: maxDimension),
-            let dataImage = UIImageJPEGRepresentation(resizedImage, 0.9) else {
+            let dataImage = resizedImage.jpegData(compressionQuality: 0.9) else {
                 return nil
         }
         return dataImage

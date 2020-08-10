@@ -103,7 +103,7 @@ open class SCTextViewWithPlaceholder: SCTextView {
                               width:   frame.size.width - textContainerInset.left - textContainerInset.right,
                               height: frame.size.height)
             
-            var attributes: [NSAttributedStringKey: Any] = [
+            var attributes: [NSAttributedString.Key: Any] = [
                 .foregroundColor: placeholderColor,
                 .paragraphStyle: paragraphStyle,
                 ]
@@ -119,8 +119,8 @@ open class SCTextViewWithPlaceholder: SCTextView {
     // Listen to UITextView notification to handle trimming, placeholder and maximum length
     fileprivate func commonInit() {
         self.contentMode = .redraw
-        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: NSNotification.Name.UITextViewTextDidChange, object: self)
-        NotificationCenter.default.addObserver(self, selector: #selector(textDidEndEditing), name: NSNotification.Name.UITextViewTextDidEndEditing, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: UITextView.textDidChangeNotification, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidEndEditing), name: UITextView.textDidEndEditingNotification, object: self)
     }
     
     
@@ -168,7 +168,7 @@ open class SCGrowingTextView: SCTextViewWithPlaceholder {
     
     // Maximm height of the textview
     @IBInspectable open var maxHeight: CGFloat = CGFloat(0)
-    fileprivate weak var heightConstraint: NSLayoutConstraint?
+    fileprivate var heightConstraint: NSLayoutConstraint?
     
     // Initialize
     override public init(frame: CGRect, textContainer: NSTextContainer?) {

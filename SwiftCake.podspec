@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftCake"
-  s.version      = "0.3.2"
+  s.version      = "0.3.3"
   s.summary      = "Complex library of various views, components and utils I use across apps"
 
   s.homepage     = "https://github.com/Rovalx/SwiftCake"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author             = { "Dominik Majda" => "ddmajda@gmail.com" }
 
   s.platform     = :ios
-  s.ios.deployment_target = "9.0"
+  s.ios.deployment_target = "10.0"
 
 
   s.source = { :git => "https://github.com/Rovalx/SwiftCake.git", :tag => "#{s.version}"}

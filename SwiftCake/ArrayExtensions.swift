@@ -15,7 +15,7 @@ extension Array where Element: Equatable {
     ///
     /// - Parameter object: item to remove
     public mutating func remove(object: Element) {
-        if let index = index(of: object) {
+        if let index = firstIndex(of: object) {
             remove(at: index)
         }
     }

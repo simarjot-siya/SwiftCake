@@ -32,7 +32,7 @@ extension UICollectionView {
     }
     
     public func dequeueHeader<T>(withReusable cell: T.Type, for indexPath: IndexPath) -> T where T: SCReusableCell {
-        return self.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: cell.cellIdentifier, for: indexPath) as! T
+        return self.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: cell.cellIdentifier, for: indexPath) as! T
     }
     
     public func dequeueCell<T>(withReusable cell: T.Type, for indexPath: IndexPath) -> T where T: SCReusableCell {

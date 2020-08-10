@@ -11,7 +11,7 @@ import UIKit
 public class SCStateTableViewSettings {
     
     static var infoLabelFont: UIFont = UIFont.systemFont(ofSize: 15.0, weight: .medium)
-    static var activityIndicatorStyle: UIActivityIndicatorViewStyle = .gray
+    static var activityIndicatorStyle: UIActivityIndicatorView.Style = .gray
     
     
 }
@@ -75,7 +75,7 @@ public class SCStateTableView: UITableView {
         adoptToState(.loading)
     }
     
-    public override init(frame: CGRect, style: UITableViewStyle) {
+    public override init(frame: CGRect, style: UITableView.Style) {
         state = .initial
         super.init(frame: frame, style: style)
         addComponents()
@@ -107,7 +107,7 @@ public class SCStateTableView: UITableView {
         activityIndicator.stopAnimating()
         activityIndicator.hidesWhenStopped = true
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicator.activityIndicatorViewStyle = SCStateTableViewSettings.activityIndicatorStyle
+        activityIndicator.style = SCStateTableViewSettings.activityIndicatorStyle
         
         // Configure info label
         infoLabel.isHidden = true
