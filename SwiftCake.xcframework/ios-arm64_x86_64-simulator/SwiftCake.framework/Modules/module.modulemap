@@ -1,0 +1,11 @@
+framework module SwiftCake {
+  umbrella header "SwiftCake.h"
+  export *
+
+  module * { export * }
+}
+
+module SwiftCake.Swift {
+  header "SwiftCake-Swift.h"
+  requires objc
+}

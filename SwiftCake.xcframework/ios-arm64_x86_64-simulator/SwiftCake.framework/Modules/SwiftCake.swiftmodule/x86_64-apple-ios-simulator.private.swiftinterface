@@ -1,0 +1,366 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name SwiftCake
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import Swift
+@_exported import SwiftCake
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum StringAttrs {
+  case kerning
+  public static func == (a: SwiftCake.StringAttrs, b: SwiftCake.StringAttrs) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Swift.Array where Element : Swift.Equatable {
+  public mutating func remove(object: Element)
+}
+extension Foundation.Bundle {
+  public var releaseVersionNumber: Swift.String? {
+    get
+  }
+  public var buildVersionNumber: Swift.String? {
+    get
+  }
+}
+final public class Printer {
+  final public let date: Foundation.Date
+  final public let df: Foundation.DateFormatter
+  public init(_ date: Foundation.Date)
+  @objc deinit
+}
+extension SwiftCake.Printer {
+  final public func with(style: Foundation.DateFormatter.Style) -> Swift.String
+}
+extension SwiftCake.Printer {
+  final public func string(with format: Swift.String) -> Swift.String
+  final public func string(_ key: any Swift.CustomStringConvertible) -> Swift.String
+  final public func string(_ key: Swift.String) -> Swift.String
+}
+extension Foundation.Date {
+  public var printer: SwiftCake.Printer {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCView : UIKit.UIView, SwiftCake.SCRoundedBorderedView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCTextView : UIKit.UITextView, SwiftCake.SCRoundedBorderedView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @available(iOS 7.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCTextViewWithPlaceholder : SwiftCake.SCTextView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var maxCharactersCount: Swift.Int
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderLeftMargin: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var trimWhiteSpaceWhenEndEditing: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var attributedText: Foundation.NSAttributedString! {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var lineFragmentPadding: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var textContainerInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc public protocol SCGrowingTextViewDelegate : UIKit.UITextViewDelegate {
+  @objc optional func textViewDidGrow(_ textView: UIKit.UITextView)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCGrowingTextView : SwiftCake.SCTextViewWithPlaceholder {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var maxHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SCStateTableViewSettings {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency public class SCStateTableView : UIKit.UITableView {
+  @_Concurrency.MainActor @preconcurrency final public let infoLabel: SwiftCake.SCAttrLabel
+  @_Concurrency.MainActor @preconcurrency final public let activityIndicator: UIKit.UIActivityIndicatorView
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var initialMessage: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var noItemsMessage: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var contentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  public enum TableViewState {
+    case loading
+    case showItems
+    case noItems
+    case initial
+    public static func == (a: SwiftCake.SCStateTableView.TableViewState, b: SwiftCake.SCStateTableView.TableViewState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency public var state: SwiftCake.SCStateTableView.TableViewState {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, style: UIKit.UITableView.Style)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCTextField : UIKit.UITextField, SwiftCake.SCRoundedBorderedView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var insets: UIKit.UIEdgeInsets
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func textRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func editingRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class PrinterSettings {
+  public static let shared: SwiftCake.PrinterSettings
+  final public func register(key: Swift.String, format: Swift.String?)
+  final public func register<T>(key: T, format: Swift.String?) where T : Swift.CustomStringConvertible
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public func resizeImage(toMaxDimension maxDimension: CoreFoundation.CGFloat = 900) -> UIKit.UIImage?
+  public func resizeToJPEGRepresentation(toMaxDimension maxDimension: CoreFoundation.CGFloat = 900) -> Foundation.Data?
+}
+public protocol SCReusableCell {
+  static var cellIdentifier: Swift.String { get }
+}
+extension SwiftCake.SCReusableCell where Self : UIKit.UITableViewCell {
+  public static var cellIdentifier: Swift.String {
+    get
+  }
+}
+extension SwiftCake.SCReusableCell where Self : UIKit.UICollectionViewCell {
+  public static var cellIdentifier: Swift.String {
+    get
+  }
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor @preconcurrency public func registerNib(cell: any SwiftCake.SCReusableCell.Type)
+  @_Concurrency.MainActor @preconcurrency public func dequeueHeader<T>(withReusable cell: T.Type, for indexPath: Foundation.IndexPath) -> T where T : SwiftCake.SCReusableCell
+  @_Concurrency.MainActor @preconcurrency public func dequeueCell<T>(withReusable cell: T.Type, for indexPath: Foundation.IndexPath) -> T where T : SwiftCake.SCReusableCell
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor @preconcurrency public func registerNib(cell: any SwiftCake.SCReusableCell.Type)
+  @_Concurrency.MainActor @preconcurrency public func dequeueCell<T>(withReusable cell: T.Type, for indexPath: Foundation.IndexPath) -> T where T : SwiftCake.SCReusableCell
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency public class SCNavigationBar : UIKit.UINavigationBar {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var transparentBar: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol SCRoundedBorderedView : SwiftCake.SCBorderedView, SwiftCake.SCRoundedView {
+}
+public protocol SCRoundedView {
+  var cornerRadius: CoreFoundation.CGFloat { get set }
+}
+public protocol SCBorderedView {
+  var borderWidth: CoreFoundation.CGFloat { get set }
+  var borderColor: UIKit.UIColor { get set }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public class func fromNib<T>() -> T where T : UIKit.UIView
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class SCButton : UIKit.UIButton, SwiftCake.SCRoundedBorderedView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var reversed: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var backgroundColorSelected: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColorSelected: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var isSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class SCCheckbox : SwiftCake.SCButton {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Swift.Dictionary {
+  public mutating func update(other: Swift.Dictionary<Key, Value>)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCLabel : UIKit.UILabel, SwiftCake.SCRoundedBorderedView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCAttrLabel : SwiftCake.SCLabel {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var paragraphLineSpacing: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var kerning: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String? {
+    @objc get
+    @objc set(text)
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var attributedText: Foundation.NSAttributedString? {
+    @objc get
+    @objc set(attributedText)
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class SCImageView : UIKit.UIImageView, SwiftCake.SCRoundedBorderedView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+final public class Comparator {
+  final public let date: Foundation.Date
+  public init(_ date: Foundation.Date)
+  @objc deinit
+}
+extension SwiftCake.Comparator {
+  final public func compareToNow(unit: Foundation.Calendar.Component) -> Swift.Int
+  final public func compare(to date: Foundation.Date, unit: Foundation.Calendar.Component) -> Swift.Int
+}
+extension Foundation.Date {
+  public var compare: SwiftCake.Comparator {
+    get
+  }
+  public func resetToMidnight() -> Foundation.Date
+}
+extension UIKit.UIColor {
+  convenience public init(r: Swift.Int, g: Swift.Int, b: Swift.Int, alpha: CoreFoundation.CGFloat = 1)
+  convenience public init?(hex: Swift.String, alpha: CoreFoundation.CGFloat = 1)
+}
+extension SwiftCake.StringAttrs : Swift.Equatable {}
+extension SwiftCake.StringAttrs : Swift.Hashable {}
+extension SwiftCake.SCStateTableView.TableViewState : Swift.Equatable {}
+extension SwiftCake.SCStateTableView.TableViewState : Swift.Hashable {}

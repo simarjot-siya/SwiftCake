@@ -50,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		300B69E92D0AE18D0028FD33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9291A4F1E5F05B000C068C1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,7 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3651966F24E1DDCA00C598D6 /* SwiftCake.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftCake.podspec; sourceTree = SOURCE_ROOT; };
+		3651966F24E1DDCA00C598D6 /* SwiftCake.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftCake.podspec; sourceTree = SOURCE_ROOT; };
 		F9120FAC1E871F0600073ABC /* SCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCView.swift; sourceTree = "<group>"; };
 		F9120FBA1E87397700073ABC /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		F9291A271E5F016300C068C1 /* SwiftCake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +315,7 @@
 				F9291A231E5F016300C068C1 /* Frameworks */,
 				F9291A241E5F016300C068C1 /* Headers */,
 				F9291A251E5F016300C068C1 /* Resources */,
+				300B69E92D0AE18D0028FD33 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,7 +363,6 @@
 					};
 					F9291A351E5F017D00C068C1 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4CA4554E6F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -585,6 +595,11 @@
 		F9291A301E5F016300C068C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -596,6 +611,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.SwiftCake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -607,6 +623,11 @@
 		F9291A311E5F016300C068C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -630,7 +651,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4CA4554E6F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftCakeExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.SwiftCakeExamples;
@@ -644,7 +665,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4CA4554E6F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftCakeExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.majdumajdu.SwiftCakeExamples;
